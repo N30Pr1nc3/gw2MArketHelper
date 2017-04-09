@@ -1,0 +1,17 @@
+C:\Users\tobi\Desktop\gwtrade\gwtrade\bin\Debug\gwtrade.exe.config
+C:\Users\tobi\Desktop\gwtrade\gwtrade\bin\Debug\gwtrade.exe
+C:\Users\tobi\Desktop\gwtrade\gwtrade\bin\Debug\gwtrade.pdb
+C:\Users\tobi\Desktop\gwtrade\gwtrade\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tobi\Desktop\gwtrade\gwtrade\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\gwtrade.csprojResolveAssemblyReference.cache
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\MainWindow.g.cs
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\App.g.cs
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\gwtrade_MarkupCompile.cache
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\gwtrade_MarkupCompile.lref
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\MainWindow.baml
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\gwtrade.g.resources
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\gwtrade.Properties.Resources.resources
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\gwtrade.csproj.GenerateResource.Cache
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\gwtrade.exe
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\gwtrade.pdb
+C:\Users\tobi\Desktop\gwtrade\gwtrade\obj\Debug\GeneratedInternalTypeHelper.g.cs

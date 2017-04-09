@@ -1,0 +1,101 @@
+﻿<Window x:Class="gwtrade.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gwtrade"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ScrollViewer Grid.Row="0" Margin="34,10,-33.333,-10.333" >
+            <ItemsControl  ItemsSource="{Binding items}"  Name="Attribute">
+                <ItemsControl.Resources>
+                    <DataTemplate DataType="{x:Type local:item}">
+                        <StackPanel Name="pnlText" Orientation="Horizontal" Width="750">
+                            <Label  Content="{Binding name}" Width=" 100" ></Label>
+                            <TextBox Text="{Binding buy, Mode=OneWay}" Width="30"></TextBox>
+                            <TextBox Text="{Binding sell, Mode=OneWay}" Width="30"></TextBox>
+                        </StackPanel>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type local:oreItem}">
+                        <StackPanel Name="pnlText" Orientation="Horizontal" Width="750">
+                            <Label  Content="{Binding name}" Width=" 100" ></Label>
+                            <TextBox Text="{Binding buy, Mode=OneWay}" Width="30" ></TextBox>
+                            <TextBox Text="{Binding sell, Mode=OneWay}" Width="30"></TextBox>
+                            <TextBox Text="{Binding c1, Mode=OneWay}" Width="60" ToolTipService.ToolTip="Barren"></TextBox>
+                            <TextBox Text="{Binding c2, Mode=OneWay}" Width="60" ToolTipService.ToolTip="Filigran"></TextBox>
+                            <TextBox Text="{Binding c3, Mode=OneWay}" Width="60" ToolTipService.ToolTip="Haken"></TextBox>
+                            <TextBox Text="{Binding c4, Mode=OneWay}" Width="60" ToolTipService.ToolTip="Kette"></TextBox>
+                            <TextBox Text="{Binding c5, Mode=OneWay}" Width="60" ToolTipService.ToolTip="Rahmen"></TextBox>
+                            <TextBox Text="{Binding c6, Mode=OneWay}" Width="60" ToolTipService.ToolTip="Ring"></TextBox>
+                        </StackPanel>
+                    </DataTemplate>
+                    <!--<DataTemplate DataType="{x:Type local:AttributViewModelHelperText}">
+                        <TextBox Margin="5" 
+                                     Width="{Binding Width}" 
+                                     Text="{Binding wert , Mode=TwoWay}" >
+                            <TextBox.InputBindings>
+                                <KeyBinding Command="{Binding triggerChange }" CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" Gesture="Return" />
+                                <KeyBinding Command="{Binding triggerChange }" CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" Gesture="Enter" />
+                                <MouseBinding Command="{Binding ContextMenue}" CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" Gesture="RightClick"/>
+                            </TextBox.InputBindings>
+                        </TextBox>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type local:AttributViewModelHelperSelect}">
+                        <ComboBox   Width="{Binding Width}" 
+                                        SelectedValue="{Binding wert}"
+                                        ItemsSource="{Binding values}"
+                                        DisplayMemberPath="Key"
+                                        SelectedValuePath="Value" >
+                            <ComboBox.InputBindings>
+                                <MouseBinding Command="{Binding ContextMenue}" CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ComboBox}}}" Gesture="RightClick"/>
+                            </ComboBox.InputBindings>
+                        </ComboBox>
+                    </DataTemplate>-->
+
+                    <!--<DataTemplate DataType="{x:Type local:AttributViewModelHelperTable}">
+                        <ItemsControl  ItemsSource="{Binding Table}"  >
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Grid >
+                                        <Grid.InputBindings>
+                                            <MouseBinding Command="{Binding ContextMenue}" CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Label}}}" Gesture="RightClick"/>
+                                        </Grid.InputBindings>
+                                    </Grid>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemContainerStyle>
+                                <Style TargetType="ContentPresenter">
+                                    <Setter Property="Grid.Column" Value="{Binding Path=Left}" />
+                                    <Setter Property="Grid.Row" Value="{Binding Path=Top}" />
+                                </Style>
+                            </ItemsControl.ItemContainerStyle>                           
+                            <ItemsControl.Resources>
+                                <DataTemplate DataType="{x:Type local:AttributViewModelHelperLabel}">
+                                    <Label  Content="{Binding bez}" Width="{Binding Width}" Margin="5"/>
+                                </DataTemplate>
+                                <DataTemplate DataType="{x:Type local:AttributViewModelHelperText}">
+                                    <TextBox Margin="5" 
+                                     Width="{Binding Width}" 
+                                     Text="{Binding wert , Mode=TwoWay}" >
+                                        <TextBox.InputBindings>
+                                            <KeyBinding Command="{Binding triggerChange }" CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" Gesture="Return" />
+                                            <KeyBinding Command="{Binding triggerChange }" CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" Gesture="Enter" />
+                                        </TextBox.InputBindings>
+                                    </TextBox>
+                                </DataTemplate>
+                                <DataTemplate DataType="{x:Type local:AttributViewModelHelperSelect}">
+                                    <ComboBox   Width="{Binding Width}" 
+                                        SelectedValue="{Binding wert}"
+                                        ItemsSource="{Binding values}"
+                                        DisplayMemberPath="Key"
+                                        SelectedValuePath="Value" />
+                                </DataTemplate>
+                            </ItemsControl.Resources>
+                        </ItemsControl>-->
+                    <!--</DataTemplate>-->
+                </ItemsControl.Resources>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>
