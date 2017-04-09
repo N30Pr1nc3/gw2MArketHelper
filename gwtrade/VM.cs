@@ -15,7 +15,7 @@ namespace gwtrade
 
         public VM()
         {
-            this.items.Add(new item(19697));
+            this.items.Add(new oreItem(19697, new item(19680), new item(12830),new item(12806),new item(12818),new item(12812),new item(12824)));
             this.items.Add(new oreItem(19698, new item(19682), new item(12832),new item(12807),new item(12819),new item(12813),new item(12825)));
             this.items.Add(new item(19700));
             this.items.Add(new item(19701));
